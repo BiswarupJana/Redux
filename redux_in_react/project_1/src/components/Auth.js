@@ -3,11 +3,11 @@ import classes from './Auth.module.css';
 import { authActions } from '../store/auth';
 
 const Auth = () => {
-  const dispath=useDispatch();
+  const dispatch = useDispatch();
   const loginHandler=(event)=>{
     event.preventDefault();
 
-    dispath(authActions.login());
+    dispatch(authActions.login());
   };
 
   return (
